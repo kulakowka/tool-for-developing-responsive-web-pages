@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #333;
+  color: #fff;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.iframes {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.iframes .iframe-name {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+}
+
+.iframes .iframe-name-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.iframes .iframe-name-edit .input-last-width {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.iframes .iframe-name-edit .input-name {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 80px;
+  border: 0;
+  transition: .3s;
+}
+.iframes .iframe-name-edit .input-name:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.iframes .iframe + .iframe {
+  margin-left: 2px;
+  height: 100vh;
+}
+.iframe-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 10px 10px;
+  user-select: none;
+  white-space: nowrap;
+}
+.header {
+  width: 100%;
+  padding: 10px;
+}
+.header .input-url {
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 0;
+  transition: .3s;
+}
+.header .input-url:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
